@@ -1,0 +1,146 @@
+/* Body background styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0094a6, #181535);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling to center the login/signup box */
+.container {
+    width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for input fields */
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a67d8;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Social login buttons */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.social-btn.facebook {
+    margin-right: 3%;
+}
+
+.social-btn i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.social-btn.facebook {
+    background-color: #7588ae;
+}
+
+.social-btn.google {
+    background-color: #acbcd1;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
+
+/* Password visibility toggle icon */
+.show-password {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Placeholder styles for eye icons */
+.fa-eye, .fa-eye-slash {
+    color: #aaa;
+}
+
+/* Form toggle links */
+.switch-link {
+    color: #667eea;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Initially hide one of the forms */
+#signup-form, #login-form {
+    display: none;
+}
+
+#login-form.active, #signup-form.active {
+    display: block;
+}
+

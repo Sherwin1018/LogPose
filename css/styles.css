@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #181535;
+    color: #FFFFFF;
+}
+
+/* Header */
+header {
+    background-color: #181535;
+    padding: 20px;
+}
+
+header h1 {
+    float: left;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul:hover {
+    color: #00b0e0;;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ .logout-btn {
+    display: inline-block;
+    background-color: #4d4970;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #6f6d7c;
+    transform: scale(1.05);
+}
+
+.hero {
+    background-color: #181535;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text{
+    flex: 1;   
+    margin-left: 20%;
+}
+
+.hero-text h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin: 1px;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text h2 {
+    color: #00e7f9;
+    font-size: 25px;
+}
+
+.hero-text h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;  
+}
+
+.highlight{
+    color: #00e7f9;
+    font-size: 20px;
+}
+
+.hero-image{
+    flex: 1;
+    text-align: left;
+}
+
+.hero-image img.rounded-img {
+    border-radius: 20px;
+    border: 3px solid #00e7f9;
+    margin-left: 50%;
+}
+
+.social-icons a {
+    color: #00e7f9;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFFFFF;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #00e7f9;
+    color: #20202A;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.btn-download:hover {
+    background-color: #0094a6;
+    transform: scale(1.05);
+}
+
+
+/* About Section */
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-inline:270px;
+    
+}
+
+.about2{
+    background-color: #084C51;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about-image-wrapper {
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #00f, #0ff);
+    display: inline-block;
+    img{
+     width:300px;
+     height: 300px;
+    }
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.about-text h2 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.about-text p{
+    font-size: 18px;  
+}
+
+.about-text h2 span {
+    color: #00cfff;
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-right: 10px;   
+    color: #00cfff;
+}
+
+.btn {
+    background-color: #00cfff;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-cont{
+    margin-block: 30px;
+}
+
+.btn:hover {
+    background-color: #00a3cc;
+    box-shadow: 0 0 20px rgba(0, 207, 255, 1);
+}
+
+
+/* Services */
+.services {
+    background-color: #181535;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.services h2 span {
+    color: #00d9ff;
+}
+
+.service-card h3 p{
+    font-size: 18px;  
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #1E3D3D;
+    padding: 30px;
+    border-radius: 15px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card .icon {
+    font-size: 60px;
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00d9ff;
+    color: #fdffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #00b0e0;
+}
+
+@media (max-width: 1200px) {
+    .service-cards {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* Projects Section */
+.projects {
+    background-color: #084C51;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.projects h2 span{
+    color: #00d9ff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.project-gallery img {
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+/* Contact Section */
+.contact {
+    background-color: #181535;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 45%;
+    background-color: #084C51;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #717B7C;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact-form textarea {
+    width: 92%;
+    height: 250px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #00d9ff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact h2{
+    font-size: 2.5rem;
+}
+
+.contact h2 span{
+    font-size: 2.5rem;
+    color: #00d9ff;
+} 
+
+.contact-form button:hover{
+    background-color: #00b0e0;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    background-color: #121212;
+    padding: 20px 0;
+}
+
